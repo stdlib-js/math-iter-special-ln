@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.iterLn;
+})();
 })();
 </script>
 ```
@@ -125,6 +127,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-ln@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 100.0, {
@@ -145,6 +148,7 @@ while ( true ) {
     console.log( r.value );
 }
 
+})();
 })();
 </script>
 </body>
@@ -254,15 +258,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln/tree/umd
+[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln/tree/umd/tree/umd
 
-[@stdlib/math/iter/special/exp]: https://github.com/stdlib-js/math-iter-special-exp/tree/umd
+[@stdlib/math/iter/special/exp]: https://github.com/stdlib-js/math-iter-special-exp/tree/umd/tree/umd
 
-[@stdlib/math/iter/special/log10]: https://github.com/stdlib-js/math-iter-special-log10/tree/umd
+[@stdlib/math/iter/special/log10]: https://github.com/stdlib-js/math-iter-special-log10/tree/umd/tree/umd
 
-[@stdlib/math/iter/special/log1p]: https://github.com/stdlib-js/math-iter-special-log1p/tree/umd
+[@stdlib/math/iter/special/log1p]: https://github.com/stdlib-js/math-iter-special-log1p/tree/umd/tree/umd
 
-[@stdlib/math/iter/special/log2]: https://github.com/stdlib-js/math-iter-special-log2/tree/umd
+[@stdlib/math/iter/special/log2]: https://github.com/stdlib-js/math-iter-special-log2/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
