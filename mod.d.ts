@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2020 The Stdlib Authors.
@@ -16,15 +16,14 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var iterMap = require( '@stdlib/math-iter-tools-map' );
-var ln = require( '@stdlib/math-base-special-ln' );
+import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
 
-
-// MAIN //
+// Define a union type representing both iterable and non-iterable iterators:
+type Iterator = Iter | IterableIterator;
 
 /**
 * Returns an iterator which iteratively evaluates the natural logarithm.
@@ -33,12 +32,11 @@ var ln = require( '@stdlib/math-base-special-ln' );
 *
 * -   If an environment supports `Symbol.iterator` **and** a provided iterator is iterable, the returned iterator is iterable.
 *
-* @param {Iterator} iterator - input iterator
-* @throws {TypeError} must provide an iterator protocol-compliant object
-* @returns {Iterator} iterator
+* @param iterator - input iterator
+* @returns iterator
 *
 * @example
-* var randu = require( '@stdlib/random-iter-randu' );
+* var randu = require( `@stdlib/random/iter/randu` );
 *
 * var iter = iterLn( randu() );
 *
@@ -53,11 +51,9 @@ var ln = require( '@stdlib/math-base-special-ln' );
 *
 * // ...
 */
-function iterLn( iterator ) {
-	return iterMap( iterator, ln );
-}
+declare function iterLn( iterator: Iterator ): Iterator;
 
 
 // EXPORTS //
 
-module.exports = iterLn;
+export = iterLn;
