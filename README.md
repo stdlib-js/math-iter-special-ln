@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-special-ln
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterLn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-ln@deno/mod.js';
+var iterLn = require( '@stdlib/math-iter-special-ln' );
 ```
 
 #### iterLn( iterator )
@@ -60,7 +78,7 @@ import iterLn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-ln@d
 Returns an [iterator][mdn-iterator-protocol] which iteratively evaluates the [natural logarithm][@stdlib/math/base/special/ln].
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var it = iterLn( array2iterator( [ 4.0, 0.0 ] ) );
 // returns <Object>
@@ -105,8 +123,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import iterLn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-ln@deno/mod.js';
+var uniform = require( '@stdlib/random-iter-uniform' );
+var iterLn = require( '@stdlib/math-iter-special-ln' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 100.0, {
@@ -167,7 +185,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -234,15 +252,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln/tree/deno
+[@stdlib/math/base/special/ln]: https://github.com/stdlib-js/math-base-special-ln
 
-[@stdlib/math/iter/special/exp]: https://github.com/stdlib-js/math-iter-special-exp/tree/deno
+[@stdlib/math/iter/special/exp]: https://github.com/stdlib-js/math-iter-special-exp
 
-[@stdlib/math/iter/special/log10]: https://github.com/stdlib-js/math-iter-special-log10/tree/deno
+[@stdlib/math/iter/special/log10]: https://github.com/stdlib-js/math-iter-special-log10
 
-[@stdlib/math/iter/special/log1p]: https://github.com/stdlib-js/math-iter-special-log1p/tree/deno
+[@stdlib/math/iter/special/log1p]: https://github.com/stdlib-js/math-iter-special-log1p
 
-[@stdlib/math/iter/special/log2]: https://github.com/stdlib-js/math-iter-special-log2/tree/deno
+[@stdlib/math/iter/special/log2]: https://github.com/stdlib-js/math-iter-special-log2
 
 <!-- </related-links> -->
 
